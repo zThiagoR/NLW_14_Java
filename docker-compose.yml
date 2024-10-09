@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  postgres_certifications:
+    image: postgres
+    container_name: postgres_certifications
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres_certifications
